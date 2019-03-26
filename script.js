@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = 'http://blooming-waters-81329.herokuapp.com/v1/task/';
+  var apiRoot = 'https://blooming-waters-81329.herokuapp.com/v1/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
