@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  const apiRoot = 'http://localhost:8081/v1/';
-  const trelloApiRoot='http://localhost:8081/v1/trello/';
+    const apiRoot = 'https://blooming-waters-81329.herokuapp.com/v1/';
+    const trelloApiRoot='https://blooming-waters-81329.herokuapp.com/v1/trello/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
