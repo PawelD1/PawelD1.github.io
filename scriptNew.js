@@ -3,7 +3,7 @@ $(document).ready(function() {
     const apiRoot = 'https://blooming-waters-81329.herokuapp.com/v1/';
     const trelloApiRoot='https://blooming-waters-81329.herokuapp.com/v1/trello/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
-  var tasksContainer = $('[data-tasks-container]');
+  var $tasksContainer = $('[data-tasks-container]');
 
   // init
   getAllTasks();
