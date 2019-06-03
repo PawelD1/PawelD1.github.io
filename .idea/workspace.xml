@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c44ea70-c881-49f6-ad24-823d9d90442b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scriptNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/scriptNew.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,20 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scriptNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="182" column="53" lean-forward="true" selection-start-line="182" selection-start-column="53" selection-end-line="182" selection-end-column="53" />
+            <state relative-caret-position="1717">
+              <caret line="203" column="47" selection-start-line="203" selection-start-column="41" selection-end-line="203" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="193" column="55" lean-forward="true" selection-start-line="193" selection-start-column="55" selection-end-line="193" selection-end-column="55" />
+            <state relative-caret-position="1846">
+              <caret line="206" column="47" selection-start-line="206" selection-start-column="41" selection-end-line="206" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -99,8 +98,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>delete</find>
       <find>cards</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,9 +127,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="800" />
-    <option name="y" value="60" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="643" />
+    <option name="y" value="4" />
     <option name="width" value="1269" />
     <option name="height" value="1047" />
   </component>
@@ -185,15 +184,15 @@
       <updated>1559376457155</updated>
       <workItem from="1559376461720" duration="2243000" />
       <workItem from="1559553893412" duration="204000" />
-      <workItem from="1559554467033" duration="3398000" />
+      <workItem from="1559554467033" duration="4632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5845000" />
+    <option name="totallyTimeSpent" value="7079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="60" width="1269" height="1047" extended-state="0" />
+    <frame x="643" y="4" width="1269" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
@@ -247,17 +246,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scriptNew.js">
+    <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="182" column="53" lean-forward="true" selection-start-line="182" selection-start-column="53" selection-end-line="182" selection-end-column="53" />
+        <state relative-caret-position="1846">
+          <caret line="206" column="47" selection-start-line="206" selection-start-column="41" selection-end-line="206" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
+    <entry file="file://$PROJECT_DIR$/scriptNew.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="193" column="55" lean-forward="true" selection-start-line="193" selection-start-column="55" selection-end-line="193" selection-end-column="55" />
+        <state relative-caret-position="1717">
+          <caret line="203" column="47" selection-start-line="203" selection-start-column="41" selection-end-line="203" selection-end-column="47" />
         </state>
       </provider>
     </entry>
