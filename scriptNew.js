@@ -1,25 +1,25 @@
 $(document).ready(function() {
+  const apiRoot = 'https://polar-beach-21694.herokuapp.com/v1/';
+  const trelloApiRoot = 'https://polar-beach-21694.herokuapp.com/v1/trello/';
+  const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
+  const $tasksContainer = $('[data-tasks-container]');
 
-    const apiRoot = 'https://blooming-waters-81329.herokuapp.com/v1/';
-    const trelloApiRoot='https://blooming-waters-81329.herokuapp.com/v1/trello/';
-  var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
-  var $tasksContainer = $('[data-tasks-container]');
-
-    var availableBoards = {};
-    var availableTasks = {};
+  var availableBoards = {};
+  var availableTasks = {};
 
   // init
+
   getAllTasks();
 
   function getAllAvailableBoards(callback, callbackArgs) {
-	  var requestUrl=trelloApiRoot+'boards';
-	  
-	  $.ajax({
-		  url: requestUrl,
-		  method: 'GET',
-		  contentType: 'application/json',
-		  success: function(boards) {callback(callbackArgs, boards); }
-	  });
+    var requestUrl = trelloApiRoot + 'boards';
+
+    $.ajax({
+      url: requestUrl,
+      method: 'GET',
+      contentType: 'application/json',
+      success: function(boards) { callback(callbackArgs, boards); }
+    });
   }
 
   function createElement(data) {
@@ -38,9 +38,9 @@ $(document).ready(function() {
   function prepareBoardOrListSelectOptions(availableChoices) {
     return availableChoices.map(function(choice) {
       return $('<option>')
-                .addClass('crud-select__option')
-                .val(choice.id)
-                .text(choice.name || 'Unknown name');
+          .addClass('crud-select__option')
+          .val(choice.id)
+          .text(choice.name || 'Unknown name');
     });
   }
 
@@ -55,10 +55,10 @@ $(document).ready(function() {
       var $availableBoardsOptionElements = prepareBoardOrListSelectOptions(boards);
 
       $datatableRowEl.find('[data-board-name-select]')
-        .append($availableBoardsOptionElements);
+          .append($availableBoardsOptionElements);
 
       $datatableRowEl
-        .appendTo($tasksContainer);
+          .appendTo($tasksContainer);
     });
   }
 
@@ -68,14 +68,15 @@ $(document).ready(function() {
     $.ajax({
       url: requestUrl,
       method: 'GET',
-	  contentType: "application/json",
+      contentType: "application/json",
       success: function(tasks) {
-		  tasks.forEach(task => {
-			  availableTasks[task.id]=tasks;
+        tasks.forEach(task => {
+          availableTasks[task.id] = task;
+        });
+
+        getAllAvailableBoards(handleDatatableRender, tasks);
+      }
     });
-	getAllAvailableBoards(handleDatatableRender, tasks);
-	  }
-	});
   }
 
   function handleTaskUpdateRequest() {
@@ -110,7 +111,7 @@ $(document).ready(function() {
     var requestUrl = apiRoot + 'tasks';
 
     $.ajax({
-      url: requestUrl + '/'+ taskId,
+      url: requestUrl + '/' + taskId,
       method: 'DELETE',
       success: function() {
         parentEl.slideUp(400, function() { parentEl.remove(); });
